@@ -7,13 +7,13 @@ const features: Array<FeatureItem> = [
   {
     title: "Deployment",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
+      "Models trained in the cloud need to be deployed to devices in recycling centers. After downloading a model from the server on AWS, we use OpenVINO to convert the downloaded model to an ONNX format for use on the IGPU. Then, the IGPU can be used to identify and count types of recycled objects in the live recycling video feed. When counting object types, deployment uses a library named Supervision (with a Kalman filter underneath) to keep accurate counts and report those to the cloud. After estimating which objects are occluding other objects, the program determines the optimal pickup order for a potential robotic arm that may assist in sorting recycling in the future.",
     icon: "mdi:rocket-launch",
   },
   {
     title: "Cloud",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+      "Over the course of the year our team has streamlined the machine learning pipeline for optimal efficiency by automating the entire process from data retrieval to model deployment. We use MongoDB to fetch training data from the feature engineering team, which is then processed in a High-Performance Computing (HPC) Cluster. An MLFlow server on AWS EC2 manages the model training, ensuring precision and tracking experiments. Models are benchmarked against predecessors, with successful ones sent to deployment and others archived. Throughout the year, we integrated MLFlow, leveraged MongoDB and AWS for data storage and cloud operations, and accelerated model training with the YOLOv5 algorithm for object detection. Additionally, we developed APIs to download model weights and transfer datasets to the HPC cluster, enhancing collaboration and efficiency. This systematic approach has significantly improved our machine learning operations.",
     icon: "mdi:cloud",
   },
   {
